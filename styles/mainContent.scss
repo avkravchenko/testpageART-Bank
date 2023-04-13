@@ -1,0 +1,70 @@
+main {
+
+    .main__container {
+        display: grid;
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        margin: 10vh auto;
+
+        .main__container__card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            min-height: 15vh;
+            max-width: 36vw;
+            background-color: rgb(247, 239, 229);
+            padding: 25px 10px;
+            border-radius: 10px;
+            
+
+            .main__container__card__btn {
+                margin-top: 3vh;
+                align-self: center;
+                padding: 5px 20px;
+                border-radius: 20px;
+                border-style: none;
+                background-color: rgb(244, 222, 195);
+            }
+
+            .main__container__card__extra-customer-data {
+                visibility: hidden;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+            }
+            
+            .main__container__card__extra-customer-data--active {
+                visibility: visible;
+                opacity: 1;
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 875px) {
+    main {
+        .main__container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .main__container__card {
+                max-width: 47vw;
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main {
+        .main__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            .main__container__card {
+                max-width: 100vw;
+
+            }
+        }   
+    }
+}
+
