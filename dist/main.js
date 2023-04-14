@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("const cards = document.querySelectorAll('.main__container__card');\nconst extra = document.querySelectorAll('.main__container__card__extra-customer-data');\n\n\nconst test0 = cards[0];\nconst test1 = extra[0];\n\nconsole.log(test0)\nconsole.log(test1)\n\ncards.forEach((card, index) => {\n    card.addEventListener('mouseover', () => {\n        if (index || index === 0) {\n            //extra[index].style.visibility = \"visible\";\n            extra[index].classList.add('main__container__card__extra-customer-data--active');\n\n        };\n    })\n\n    card.addEventListener('mouseout', () => {\n        if (index || index === 0) {\n            //extra[index].style.visibility = \"hidden\";\n            extra[index].classList.remove('main__container__card__extra-customer-data--active');\n        }\n    })\n})\n\n\n//# sourceURL=webpack://testpageart-bank/./src/index.js?");
+eval("const cards = document.querySelectorAll('.main__container__card');\nconst extra = document.querySelectorAll('.main__container__card__extra-customer-data');\n\n\nconst test0 = cards[0];\nconst test1 = extra[0];\n\nconsole.log(test0)\nconsole.log(test1)\n\ncards.forEach((card, index) => {\n    card.addEventListener('mouseover', () => {\n\n        if (index || index === 0) {\n            extra[index].classList.add('main__container__card__extra-customer-data--active');\n        };\n    })\n\n    card.addEventListener('mouseout', () => {\n        if (index || index === 0) {\n            extra[index].classList.remove('main__container__card__extra-customer-data--active');\n        }\n    })\n})\n\n\n//# sourceURL=webpack://testpageart-bank/./src/index.js?");
 
 /***/ })
 
